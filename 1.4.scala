@@ -1,6 +1,3 @@
-#!/usr/bin/env scala
-
-
 object MyApp {
 	def loop: Boolean = loop
 	def and(x : Boolean, y: => Boolean) = if (x) y else false
