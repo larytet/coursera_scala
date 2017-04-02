@@ -7,7 +7,7 @@ object sc {
     else sqrtIter(improve(guess, x), x)
     
   def isGoodEnough(guess: Double, x: Double) =
-    abs(guess*guess - x) < 0.001
+    abs(guess*guess - x) < x*0.001
     
   def improve(guess: Double, x: Double) = 
     (guess + x / guess) / 2
@@ -17,3 +17,5 @@ object sc {
 
 println(sc.sqrt(2))
 println(sc.sqrt(4))
+println(sc.sqrt(1e-6))
+println(sc.sqrt(1e60))
